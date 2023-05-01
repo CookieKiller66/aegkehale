@@ -1,5 +1,3 @@
-
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -87,3 +85,21 @@ window.addEventListener('resize', function () {
 
 
 document.getElementById("year").innerHTML = new Date().getFullYear();
+
+const backToTop = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', function () {
+    if (document.documentElement.scrollTop > 50) {
+        backToTop.classList.remove('d-none');
+
+    } else {
+
+        backToTop.classList.add('d-none');
+    }
+
+});
+// scroll body to 0px on click
+backToTop.click(function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+

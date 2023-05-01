@@ -4640,9 +4640,9 @@ fieldset:disabled .btn {
   }
 
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #FEFAE0;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #FEFAE0;
   }
 }
 
@@ -12904,10 +12904,6 @@ body {
     color: #fff;
   }
 
-  #mainNav.navbar-shrink {
-    background-color: #fff;
-  }
-
   #mainNav.navbar-shrink .navbar-brand {
     color: #000;
   }
@@ -12927,9 +12923,9 @@ body {
   }
 
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
+    color: #FEFAE0;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #FEFAE0;
   }
 }
 
@@ -12987,6 +12983,7 @@ body {
     border-bottom: none;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
+    opacity: 1;
   }
 }
 
@@ -13172,4 +13169,10 @@ body {
 
 .masthead {
   height: 100vh;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
 }

@@ -4638,6 +4638,12 @@ fieldset:disabled .btn {
     padding: 0;
     overflow-y: visible;
   }
+
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #64a19d;
+    outline: none;
+    border-bottom: 0.25rem solid #64a19d;
+  }
 }
 
 @media (min-width: 992px) {
@@ -12834,7 +12840,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 #mainNav .navbar-toggler {

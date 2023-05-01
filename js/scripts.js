@@ -84,3 +84,6 @@ window.addEventListener('resize', function () {
         removeToggler();
     }
 });
+
+
+document.getElementById("year").innerHTML = new Date().getFullYear();

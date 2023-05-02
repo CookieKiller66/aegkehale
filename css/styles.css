@@ -13176,3 +13176,19 @@ body {
   bottom: 25px;
   right: 25px;
 }
+
+.pictures img:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+
+  .projects-section .accordion-button:hover {
+    cursor: unset;
+  }
+
+  .projects-section .accordion-button:focus {
+    box-shadow: none;
+  }
+
+}

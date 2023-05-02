@@ -73,13 +73,40 @@ function myFunction() {
 }
 myFunction()
 
-window.addEventListener('resize', function () {
+window.onload = function () {
+    if (window.innerWidth > 1400) {
+        const card = document.getElementById('card-calc-from');
+        const map = document.getElementById('map');
 
+        map.style.height = card.clientHeight + 'px';
+        map.style.width = card.clientWidth + 'px';
+    } else {
+        const map = document.getElementById('map');
+
+        map.style.height = '350px';
+        map.style.width = '300px';
+    }
+};
+
+window.addEventListener('resize', function () {
     if (window.innerWidth < 992) {
         addToggler(true);
 
     } else {
         removeToggler();
+    }
+
+    if (window.innerWidth > 1400) {
+        const card = document.getElementById('card-calc-from');
+        const map = document.getElementById('map');
+
+        map.style.height = card.clientHeight + 'px';
+        map.style.width = card.clientWidth + 'px';
+    } else {
+        const map = document.getElementById('map');
+
+        map.style.height = '250px';
+        map.style.width = '300px';
     }
 });
 
